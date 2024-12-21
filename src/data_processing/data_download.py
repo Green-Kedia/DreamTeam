@@ -834,7 +834,7 @@ def ensure_roles(group):
 
 
 def get_data():
-    # load_data()
+    load_data()
     add_data()
     update_data()
     player_stats_df = calculate_fantasy_points(paths, paths_pro)

@@ -51,11 +51,11 @@ def move_files(source_dir, destination_dir):
 
 
 def lets_get_data():
-    is_empty = lambda path: os.path.isdir(source_directory) and not any(os.scandir(source_directory))
-    if is_empty:
-        data_download.load_data()
-    else:
-        move_files(source_directory, destination_directory)
+    # is_empty = lambda path: os.path.isdir(source_directory) and not any(os.scandir(source_directory))
+    # if is_empty:
+    #     data_download.load_data()
+    # else:
+    #     move_files(source_directory, destination_directory)
     data_download.get_data()
     return feature_engineering.get_features()
 
